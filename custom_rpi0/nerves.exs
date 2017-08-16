@@ -5,14 +5,14 @@ version =
   |> File.read!
   |> String.trim
 
-pkg = :nerves_system_rpi0
+pkg = :custom_rpi0
 
 config pkg, :nerves_env,
   type: :system,
   version: version,
   compiler: :nerves_package,
   artifact_url: [
-    "https://github.com/nerves-project/#{pkg}/releases/download/v#{version}/#{pkg}-v#{version}.tar.gz",
+    "https://github.com/yourstruly/#{pkg}/releases/download/v#{version}/#{pkg}-v#{version}.tar.gz",
   ],
   platform: Nerves.System.BR,
   platform_config: [
